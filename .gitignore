@@ -1,4 +1,7 @@
 secret.yaml
+**.qcow2
+artifacts/**
+clouds.yaml
 secrets.yaml
 .python-version
 uv.lock
