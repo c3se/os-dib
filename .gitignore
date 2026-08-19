@@ -1,0 +1,8 @@
+secret.yaml
+secrets.yaml
+.python-version
+uv.lock
+.venv
+**/__pycache__
+*egg-info*
+build/
