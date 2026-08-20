@@ -25,6 +25,7 @@
         size: 100%
         mkfs:
           type: xfs
+          label: rootfs
           mount:
             mount_point: /
             fstab:
