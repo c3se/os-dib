@@ -1,4 +1,5 @@
 secret.yaml
+wget-log**
 **.qcow2
 artifacts/**
 clouds.yaml

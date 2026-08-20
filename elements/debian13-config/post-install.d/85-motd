@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -eux
+set -o pipefail
+
+cat > /etc/motd << EOF
+This is a Debian 13 virtual machine.
+
+
+The timezone is set to Europe/Stockholm.
+
+Automatic upgrades are enabled, but automatic restarts are not. To configure,
+see /etc/apt.config.d/50unattended-upgrades
+
+To modify or delete this message, edit /etc/motd.d/10-cloudimage.
+
+EOF
