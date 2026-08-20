@@ -1,0 +1,6 @@
+[Unit]
+Description=Autobuild for %I
+
+[Service]
+Type=oneshot
+ExecStart=/root/os-dib/build.sh %i

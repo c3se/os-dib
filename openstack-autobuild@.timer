@@ -1,0 +1,9 @@
+[Unit]
+Description=Openstack autobuild timer
+Wants=network-online.target
+
+[Timer]
+OnCalendar=Wed 05:10
+RandomizedDelaySec=37m
+Persistent=true
+

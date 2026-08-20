@@ -9,4 +9,4 @@ export DIB_BLOCK_DEVICE_CONFIG="file://${ROOT}/block-devices/xfs.yaml"
 
 cd "${ROOT}"
 
-diskimage-builder images/$1.yaml
+.venv/bin/diskimage-builder images/$1.yaml
