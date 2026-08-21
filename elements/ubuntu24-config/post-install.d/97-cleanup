@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -eux
+set -o pipefail
+
+
+rm -f /etc/update-motd.d/00-header
+rm -f /etc/update-motd.d/10-help-text
+rm -f /etc/update-motd.d/50-landscape-sysinfo
+rm -f /etc/update-motd.d/50-motd-news
+rm -f /etc/update-motd.d/85-fwupd
+rm -f /etc/update-motd.d/90-updates-available
+rm -f /etc/update-motd.d/91-contract-ua-esm-status
+rm -f /etc/update-motd.d/91-release-upgrade
+rm -f /etc/update-motd.d/95-hwe-eol
+rm -f /etc/update-motd.d/97-overlayroot
+rm -f /etc/update-motd.d/98-fsck-at-reboot
