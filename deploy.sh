@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${ROOT}"
@@ -13,3 +11,5 @@ if [[ $IMAGE_ID != "" ]]; then
 fi
 
 .venv/bin/openstack image create --public --disk-format qcow2 --file "${1}".qcow2 "$1"
+
+rm "$1.qcow2"
