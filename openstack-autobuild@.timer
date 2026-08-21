@@ -7,3 +7,6 @@ OnCalendar=Wed 05:10
 RandomizedDelaySec=37m
 Persistent=true
 
+
+[Install]
+WantedBy=timers.target
