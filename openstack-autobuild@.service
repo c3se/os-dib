@@ -3,4 +3,6 @@ Description=Autobuild for %I
 
 [Service]
 Type=oneshot
+WorkingDirectory=/root/os-dib
 ExecStart=/root/os-dib/build.sh %i
+ExecStart=/root/os-dib/deploy.sh %i
