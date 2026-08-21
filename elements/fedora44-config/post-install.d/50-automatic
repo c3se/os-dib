@@ -3,12 +3,11 @@
 set -eux
 set -o pipefail
 
-sed -ri \
-    's/^[[:space:]]*download_updates[[:space:]]*=.*/download_updates = yes/' \
-    /etc/dnf/automatic.conf
+cat > /etc/dnf/automatic.conf << EOF
+[commands]
+upgrade_type = default
+download_updates = yes
+apply_updates = yes
+EOF
 
-sed -ri \
-    's/^[[:space:]]*apply_updates[[:space:]]*=.*/apply_updates = yes/' \
-    /etc/dnf/automatic.conf
-
-systemctl enable dnf-automatic.timer
+systemctl enable dnf5-automatic.timer

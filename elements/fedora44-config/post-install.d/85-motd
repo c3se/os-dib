@@ -4,7 +4,7 @@ set -eux
 set -o pipefail
 
 cat >> /etc/motd.d/10-cloudimage << EOF
-This is an Alma Linux 9 Virtual Machine.
+This is a Fedora 44 Virtual Machine.
 
 By default, SELinux is set to Permissive mode. To edit, go to /etc/selinux/config.
 

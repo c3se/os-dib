@@ -1,4 +1,5 @@
-dnf-automatic:
+dnf5-plugin-automatic:
+cloud-init:
 dnf-plugins-core:
 vim:
 bash-completion:
