@@ -3,6 +3,7 @@ wget-log**
 **.qcow2
 artifacts/**
 clouds.yaml
+clouds*.yaml
 secrets.yaml
 .python-version
 uv.lock
