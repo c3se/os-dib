@@ -1,0 +1,5 @@
+dnf-automatic:
+dnf-plugins-core:
+vim:
+bash-completion:
+git:

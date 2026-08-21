@@ -25,4 +25,4 @@
 
     ELEMENTS_PATH: "./elements"
 
-    DIB_MANIFEST_SAVE_DIR: "./artifacts/debian13-openstack.d"
+    DIB_MANIFEST_SAVE_DIR: "./artifacts/ubuntu24-openstack.d"

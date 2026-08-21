@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eux
+set -o pipefail
+
+ln -sf /usr/share/zoneinfo/Europe/Stockholm /etc/localtime

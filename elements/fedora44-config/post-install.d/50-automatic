@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -eux
+set -o pipefail
+
+sed -ri \
+    's/^[[:space:]]*download_updates[[:space:]]*=.*/download_updates = yes/' \
+    /etc/dnf/automatic.conf
+
+sed -ri \
+    's/^[[:space:]]*apply_updates[[:space:]]*=.*/apply_updates = yes/' \
+    /etc/dnf/automatic.conf
+
+systemctl enable dnf-automatic.timer

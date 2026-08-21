@@ -1,9 +1,9 @@
-- imagename: rocky9
+- imagename: alma9
   types:
     - qcow2
 
   elements:
-    - rocky-container
+    - almalinux-container
     - vm
     - block-device-efi
     - cloud-init
@@ -15,7 +15,7 @@
     - manifests
     - package-installs
     - element-manifest
-    - rocky9-config
+    - alma9-config
 
   environment:
     DIB_RELEASE: "9"
@@ -26,4 +26,4 @@
 
     ELEMENTS_PATH: "./elements"
 
-    DIB_MANIFEST_SAVE_DIR: "./artifacts/rocky9-openstack.d"
+    DIB_MANIFEST_SAVE_DIR: "./artifacts/alma9-openstack.d"

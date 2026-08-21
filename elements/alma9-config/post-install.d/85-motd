@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -eux
+set -o pipefail
+
+cat >> /etc/motd.d/10-cloudimage << EOF
+This is an Alma Linux 9 Virtual Machine.
+
+By default, SELinux is set to Permissive mode. To edit, go to /etc/selinux/config.
+
+The timezone is set to Europe/Stockholm.
+
+Automatic upgrades are enabled, but automatic restarts are not. To configure,
+see /etc/dnf/automatic.conf and the systemd service dnf-automatic.
+
+To modify or delete this message, edit /etc/motd.d/10-cloudimage.
+
+EOF
