@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dnf remove -y $(dnf list installed | grep firmware | cut -f1 -d' ' | tr '\n' ' ') geolite2-city
+dnf clean all
+cloud-init clean
