@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+dnf remove -y $(dnf list --installed | grep qemu | cut -f1 -d' ' | tr '\n' ' ') shellcheck podman kernel-devel gcc
+dnf clean all
+cloud-init clean
