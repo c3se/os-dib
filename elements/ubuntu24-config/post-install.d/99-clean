@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+apt remove snapd gcc linux-firmware -y
+apt autoremove -y
+apt clean
+cloud-init clean
